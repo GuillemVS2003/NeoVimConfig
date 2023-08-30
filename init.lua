@@ -1,6 +1,5 @@
 require("plugins")
+require("lspzero")
 require("set")
-require("lsp_config")
-require("completion")
-require("theme")
 require("ff_telescope")
+require("theme")
