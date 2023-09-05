@@ -32,10 +32,5 @@ require("lazy").setup({
 		-- or                              , branch = '0.1.x',
 		dependencies = { 'nvim-lua/plenary.nvim' }
 	},
-	{
-		"folke/tokyonight.nvim",
-		lazy = false,
-		priority = 1000,
-		opts = {},
-	}
+	{ "rebelot/kanagawa.nvim" }
 })
