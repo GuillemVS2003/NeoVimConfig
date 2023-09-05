@@ -5,7 +5,7 @@ lsp.on_attach(function(_, bufnr)
 end)
 
 lsp.ensure_installed({
-	"clangd", "pylsp", "csharp_ls", "lua_ls"
+	"clangd", "pylsp", "csharp_ls", "lua_ls", "rust_analyzer"
 })
 
 local lspconfig = require("lspconfig")
@@ -14,6 +14,7 @@ lspconfig.clangd.setup({})
 lspconfig.pylsp.setup({})
 lspconfig.csharp_ls.setup({})
 lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
+lspconfig.rust_analyzer.setup({})
 
 lsp.setup()
 
