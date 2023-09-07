@@ -32,5 +32,9 @@ require("lazy").setup({
 		-- or                              , branch = '0.1.x',
 		dependencies = { 'nvim-lua/plenary.nvim' }
 	},
-	{ "rebelot/kanagawa.nvim" }
+	{ "rebelot/kanagawa.nvim" },
+	{
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
+	}
 })
