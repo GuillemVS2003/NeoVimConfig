@@ -19,6 +19,7 @@ lspconfig.rust_analyzer.setup({})
 
 lsp.setup()
 
+-- Build apple's sourcekit-lsp for this to work!
 local swift_lsp = vim.api.nvim_create_augroup("swift_lsp", { clear = true })
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = { "swift" },
