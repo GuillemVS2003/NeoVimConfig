@@ -6,7 +6,7 @@ end)
 
 lsp.ensure_installed({
 	"clangd", "pylsp", "csharp_ls", "lua_ls",
-	"rust_analyzer"
+	"rust_analyzer", "html", "cssls"
 })
 
 local lspconfig = require("lspconfig")
@@ -16,6 +16,8 @@ lspconfig.pylsp.setup({})
 lspconfig.csharp_ls.setup({})
 lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
 lspconfig.rust_analyzer.setup({})
+lspconfig.html.setup({})
+lspconfig.cssls.setup({})
 
 lsp.setup()
 
@@ -34,9 +36,12 @@ vim.api.nvim_create_autocmd("FileType", {
 			root_dir = root_dir,
 		})
 		vim.lsp.buf_attach_client(0, client)
+		vim.opt.tabstop=8
+		vim.opt.shiftwidth=8
 	end,
 	group = swift_lsp,
 })
+print(swift_lsp)
 
 vim.opt.scl = "no"
 
