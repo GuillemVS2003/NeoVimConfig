@@ -15,7 +15,18 @@ lspconfig.clangd.setup({})
 lspconfig.pylsp.setup({})
 lspconfig.csharp_ls.setup({})
 lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
-lspconfig.rust_analyzer.setup({})
+lspconfig.rust_analyzer.setup({
+	settings = {
+		["rust-analyzer"] = {
+			diagnostics = {
+				enable = true,
+				experimental = {
+					enable = true
+				}
+			}
+		}
+	}
+})
 lspconfig.html.setup({})
 lspconfig.cssls.setup({})
 
@@ -41,7 +52,6 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 	group = swift_lsp,
 })
-print(swift_lsp)
 
 vim.opt.scl = "no"
 
