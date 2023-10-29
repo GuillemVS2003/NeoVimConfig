@@ -41,5 +41,23 @@ require("lazy").setup({
 		lazy = false,
 		priority = 1000,
 		opts = {},
+	},
+	{
+		"folke/which-key.nvim",
+		event = "VeryLazy",
+		init = function()
+			vim.o.timeout = true
+			vim.o.timeoutlen = 300
+		end,
+		opts = {
+
+		}
+	},
+	{
+		'akinsho/bufferline.nvim',
+		version = "*",
+		dependencies = 'nvim-tree/nvim-web-devicons'
 	}
 })
+
+require("bufferline").setup{}
