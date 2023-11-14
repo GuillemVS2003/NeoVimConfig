@@ -1,1 +1,1 @@
-vim.cmd[[colorscheme tokyonight-moon]]
+vim.cmd.colorscheme "catppuccin" --  catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
