@@ -1,6 +1,6 @@
+require("set")
 require("plugins")
 require("lspzero")
-require("set")
 require("ff_telescope")
 require("theme")
 require("treesitter")
