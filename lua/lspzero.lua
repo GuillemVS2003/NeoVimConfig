@@ -6,7 +6,7 @@ end)
 
 lsp.ensure_installed({
 	"clangd", "pylsp", "csharp_ls", "lua_ls",
-	"rust_analyzer", "html", "cssls"
+	"rust_analyzer", "html", "cssls", "wgsl_analyzer", "typst_lsp"
 })
 
 local lspconfig = require("lspconfig")
@@ -29,6 +29,8 @@ lspconfig.rust_analyzer.setup({
 })
 lspconfig.html.setup({})
 lspconfig.cssls.setup({})
+lspconfig.wgsl_analyzer.setup({})
+lspconfig.typst_lsp.setup({})
 
 lsp.setup()
 

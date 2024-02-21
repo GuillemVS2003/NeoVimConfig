@@ -9,4 +9,4 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     end,
 })
 
-vim.cmd.colorscheme "catppuccin" --  catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+vim.cmd.colorscheme "catppuccin-macchiato" --  catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
