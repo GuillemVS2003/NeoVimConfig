@@ -30,7 +30,11 @@ lspconfig.rust_analyzer.setup({
 lspconfig.html.setup({})
 lspconfig.cssls.setup({})
 lspconfig.wgsl_analyzer.setup({})
-lspconfig.typst_lsp.setup({})
+lspconfig.typst_lsp.setup({
+	settings = {
+		exportPdf = "onSave"
+	}
+})
 
 lsp.setup()
 

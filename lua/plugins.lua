@@ -57,6 +57,7 @@ require("lazy").setup({
 		'freddiehaddad/feline.nvim',
 		opts = {},
 	},
+	{ "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...}
 })
 
 require("bufferline").setup{}
