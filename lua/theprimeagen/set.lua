@@ -29,3 +29,4 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+vim.g.rust_recommended_style = '0'
